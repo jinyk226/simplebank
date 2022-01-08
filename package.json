@@ -1,0 +1,50 @@
+{
+  "name": "simplebank",
+  "version": "1.0.0",
+  "description": "[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/golang-migrate/migrate/CI/master)](https://github.com/golang-migrate/migrate/actions/workflows/ci.yaml?query=branch%3Amaster) [![GoDoc](https://pkg.go.dev/badge/github.com/golang-migrate/migrate)](https://pkg.go.dev/github.com/golang-migrate/migrate/v4) [![Coverage Status](https://img.shields.io/coveralls/github/golang-migrate/migrate/master.svg)](https://coveralls.io/github/golang-migrate/migrate?branch=master) [![packagecloud.io](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/golang-migrate/migrate?filter=debs) [![Docker Pulls](https://img.shields.io/docker/pulls/migrate/migrate.svg)](https://hub.docker.com/r/migrate/migrate/) ![Supported Go Versions](https://img.shields.io/badge/Go-1.16%2C%201.17-lightgrey.svg) [![GitHub Release](https://img.shields.io/github/release/golang-migrate/migrate.svg)](https://github.com/golang-migrate/migrate/releases) [![Go Report Card](https://goreportcard.com/badge/github.com/golang-migrate/migrate)](https://goreportcard.com/report/github.com/golang-migrate/migrate)",
+  "main": "server.js",
+  "scripts": {
+    "start-server": "nodemon main.js -e html,js,css --ignore public",
+    "build": "webpack",
+    "build-watch": "webpack -w",
+    "start": "npm run build-watch & npm run start-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekimj/simplebank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kekimj/simplebank/issues"
+  },
+  "homepage": "https://github.com/kekimj/simplebank#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "nodemon": "^2.0.15",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
+    "styled-components": "^5.3.3"
+  }
+}
